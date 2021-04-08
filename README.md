@@ -14,11 +14,11 @@ An ASA service user with API keypair secrets stored in SSM is needed to run this
 module "asa_audit_logs" {
   source = "git::https://github.com/doximity/asa-audit-logs?ref=tags/0.1.0"
   
-  env   					= "production"
-  asa_team 				= "demo_team"
-  kms_key_arn 			= aws_kms_key.demo_key.arn
-  asa_api_key_path 		= "/demo/asa/api_key"
-  asa_api_secret_path 	= "/demo/asa/api_secret"
+  env = "production"
+  asa_team  = "demo_team"
+  kms_key_arn = aws_kms_key.demo_key.arn
+  asa_api_key_path  = "/demo/asa/api_key"
+  asa_api_secret_path = "/demo/asa/api_secret"
   time_interval = 15
 }
 
