@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+bundle install --path vendor/bundle --without development
+rm -f asa-audit-logs.zip
+zip -r asa-audit-logs.zip Gemfile* lib/* *.rb vendor/* .bundle
+rm -rf vendor/ .bundle/
