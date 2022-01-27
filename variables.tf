@@ -19,5 +19,5 @@ variable "asa_api_secret_path" {
 }
 
 variable "time_internval" {
-  description = "Time interval in minutes to run the lambda"
+  description = "Time interval in minutes to run the lambda as an integer"
 }
